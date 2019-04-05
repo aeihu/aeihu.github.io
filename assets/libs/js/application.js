@@ -4,6 +4,7 @@
 
 //	HISTORICIZE AND AJAXIFY OUR SITE
 jQuery(document).ready(function() {
+	console.log('helllllllllllo')
 	var siteUrl = 'http://'+(document.location.hostname||document.location.host);
 
 	//	Catch all internally-focused links and push a new state.
