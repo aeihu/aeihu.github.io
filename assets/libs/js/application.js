@@ -38,13 +38,12 @@ jQuery(document).ready(function() {
 														// remove that line.
 														
 			if (__content.length == 1){
-				if ($(data).find('.content')[0].nodeName ==  'ARTICLE')
+				if ($(data).find('.content')[0].nodeName ==  'ARTICLE'){
+					_checkInstance();
+					video_embed();
 					mp3_embed();
-				else
-					console.log(document.title);
+				}
 			}
-			else
-				console.log(document.title);
 		});
 	});
 });
