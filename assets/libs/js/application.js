@@ -18,7 +18,7 @@ jQuery(document).ready(function() {
 		$.get(State.url, function(data){	// Use AJAX to get the new content.
 			document.title = data.match(/<title>(.*?)<\/title>/)[1];
 			// console.log('==================================================');
-			// console.log($(data));
+			console.log($(data));
 			// console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
 			// console.log($(data).find('.content'));
 			// console.log('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
