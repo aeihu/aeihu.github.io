@@ -4,11 +4,13 @@
 <head>
 {% include head.html %}
 <link rel="shortcut icon" href="/favicon.ico">
+<script src="{{ site.url }}/assets/libs/js/application.js"></script>
 </head>
 
 <body>
 
 
+  <section class="content row">
     {% include nav.html %}
 
     {{ content }}
@@ -17,60 +19,12 @@
 
 {% include Scroll_to_Top.html %}
 {% include open-embed.html %}
+</section>
 
   <!-- <embed name="lostmojo" src="https://opengameart.org/sites/default/files/Ove%20Melaa%20-%20Heaven%20Sings.mp3" width="150" height="90" loop="false" autostart="true"> -->
     
-<audio controls>
+<!-- <audio controls>
     <source src="https://opengameart.org/sites/default/files/Ove%20Melaa%20-%20Heaven%20Sings.mp3" type="audio/mpeg">
-  </audio> 
+  </audio>  -->
 </body>
-
-  <script>
-
-    function setCookie(c_name,value,exdays)
-    {
-        var exdate=new Date();
-        exdate.setDate(exdate.getDate() + exdays);
-        var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
-        document.cookie=c_name + "=" + c_value;
-    }
-    
-    function getCookie(c_name)
-    {
-        var i,x,y,ARRcookies=document.cookie.split(";");
-        for (i=0;i<ARRcookies.length;i++)
-        {
-          x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
-          y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
-          x=x.replace(/^\s+|\s+$/g,"");
-          if (x==c_name)
-            {
-            return unescape(y);
-            }
-          }
-    }
-    
-    var song = document.getElementsByTagName('audio')[0];
-    var played = false;
-    var tillPlayed = getCookie('timePlayed');
-    function update()
-    {
-        if(!played){
-            if(tillPlayed){
-            song.currentTime = tillPlayed;
-            song.play();
-            played = true;
-            }
-            else {
-                    song.play();
-                    played = true;
-            }
-        }
-    
-        else {
-        setCookie('timePlayed', song.currentTime);
-        }
-    }
-    setInterval(update,50);
-    </script>
 </html>
