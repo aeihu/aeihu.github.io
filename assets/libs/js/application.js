@@ -36,5 +36,6 @@ jQuery(document).ready(function() {
 														// If you don't use Google Analytics, you can safety comment or
 														// remove that line.
 		});
+		mp3_embed();
 	});
 });
