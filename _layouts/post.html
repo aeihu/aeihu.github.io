@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<html class="content">
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -23,7 +23,8 @@ layout: default
 
 {% assign post = page %}
 
-<article>
+<!-- <div class="content"> -->
+<article class="content">
 <!-- Post Header -->
 <header class="intro-header" style="background-image: url('{{root_url}}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
     <div class="container">
