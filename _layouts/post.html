@@ -21,10 +21,10 @@ layout: default
 
 <link href="{{root_url}}/assets/libs/css/bigfoot.css" rel="stylesheet" />
 
-{% assign post = page %}
-
 <!-- <div class="content"> -->
 <article class="content">
+    {% assign post = page %}
+    {% include open-embed.html %} <!-- open-embed.html作用是markdown里使用 <p>音乐链接</p> 可在文章中添加音乐播放器-->
 <!-- Post Header -->
 <header class="intro-header" style="background-image: url('{{root_url}}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
     <div class="container">
