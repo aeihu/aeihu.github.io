@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% include head.html %}
+<link rel="shortcut icon" href="/favicon.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="{{ site.url }}/assets/libs/js/application.js"></script>
+</head>
+
+<body>
+  {% include nav.html %}
+    <section class="content">
+
+        {{ content }}
+
+    </section>
+    {% include footer.html %}
+
+    {% include Scroll_to_Top.html %}
+    {% include open-embed.html %} <!-- open-embed.html作用是markdown里使用 <p>音乐链接</p> 可在文章中添加音乐播放器-->
+
+<embed name="lostmojo" src="https://opengameart.org/sites/default/files/Ove%20Melaa%20-%20Heaven%20Sings.mp3" width="150" height="90" loop="false" autostart="true">
+    
+<!-- <audio controls>
+    <source src="https://opengameart.org/sites/default/files/Ove%20Melaa%20-%20Heaven%20Sings.mp3" type="audio/mpeg">
+  </audio>  -->
+</body>
+</html>
