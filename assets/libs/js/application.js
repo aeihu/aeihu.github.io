@@ -28,6 +28,8 @@ jQuery(document).ready(function() {
 			console.log('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
 			console.log($(data).find('section'));
 			console.log('--------------------------------------------------');
+			console.log($(data).find('.container'));
+			console.log('--------------------------------------------------');
 			$('.content').html('<h2>hello world!@!</h2>'); 
 			//$('.content').html($(data).find('.content')); 	// Pull the post we want out of the .content class.
 															// If you change the class of the post container,
