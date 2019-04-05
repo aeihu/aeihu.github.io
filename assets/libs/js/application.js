@@ -20,6 +20,8 @@ jQuery(document).ready(function() {
 		$.get(State.url, function(data){	// Use AJAX to get the new content.
 			document.title = data.match(/<title>(.*?)<\/title>/)[1];
 			console.log(data);
+			console.log('==================================================');
+			console.log($(data).find('.container'));
 			$('.content').html('<h2>hello world!@!</h2>'); 
 			//$('.content').html($(data).find('.content')); 	// Pull the post we want out of the .content class.
 															// If you change the class of the post container,
