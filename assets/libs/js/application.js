@@ -39,7 +39,7 @@ jQuery(document).ready(function() {
 			if ("Writing - Aeihu" ==  document.title)
 				mp3_embed();
 			else
-				console.log('sssssssssssss');
+				console.log(document.title);
 		});
 	});
 });
