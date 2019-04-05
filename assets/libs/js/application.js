@@ -35,7 +35,11 @@ jQuery(document).ready(function() {
 			//_gaq.push(['_trackPageview', State.url]);	// This updates Google Analytics with a visit to the new page.
 														// If you don't use Google Analytics, you can safety comment or
 														// remove that line.
-			mp3_embed();
+
+			if ("Writing - Aeihu" ==  document.title)
+				mp3_embed();
+			else
+				console.log('sssssssssssss');
 		});
 	});
 });
