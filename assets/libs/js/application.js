@@ -29,16 +29,20 @@ jQuery(document).ready(function() {
 			// console.log($(data).find('.container'));
 			// console.log('--------------------------------------------------');
 			//$('.content').html('<h2>hello world!@!</h2>'); 
-			$('.content').html($(data).find('.content')); 	// Pull the post we want out of the .content class.
+			let __content = $(data).find('.content')
+			$('.content').html(__content); 	// Pull the post we want out of the .content class.
 															// If you change the class of the post container,
 															// you must change it here!!!
 			//_gaq.push(['_trackPageview', State.url]);	// This updates Google Analytics with a visit to the new page.
 														// If you don't use Google Analytics, you can safety comment or
 														// remove that line.
 														
-			console.log($(data).find('.content').length);
-			if ($(data).find('.content')[0].nodeName ==  'ARTICLE')
-				mp3_embed();
+			if (__content.length == 1){
+				if ($(data).find('.content')[0].nodeName ==  'ARTICLE')
+					mp3_embed();
+				else
+					console.log(document.title);
+			}
 			else
 				console.log(document.title);
 		});
