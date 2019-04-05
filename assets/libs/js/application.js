@@ -18,9 +18,9 @@ jQuery(document).ready(function() {
 		$.get(State.url, function(data){	// Use AJAX to get the new content.
 			document.title = data.match(/<title>(.*?)<\/title>/)[1];
 			// console.log('==================================================');
-			console.log($(data));
+			//console.log($(data));
 			// console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
-			console.log($(data).find('.content'));
+			//console.log($(data).find('.content'));
 			// console.log('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
 			// console.log($(data).find('section.content'));
 			// console.log('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
@@ -41,7 +41,7 @@ jQuery(document).ready(function() {
 				if ($(data).find('.content')[0].nodeName ==  'ARTICLE'){
 					video_embed();
 					mp3_embed();
-					
+
 					$('a.popup').magnificPopup({
 					 type: 'image',
 					gallery:{
