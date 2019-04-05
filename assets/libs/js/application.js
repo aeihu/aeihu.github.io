@@ -20,7 +20,7 @@ jQuery(document).ready(function() {
 			// console.log('==================================================');
 			console.log($(data));
 			// console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
-			// console.log($(data).find('.content'));
+			console.log($(data).find('.content'));
 			// console.log('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
 			// console.log($(data).find('section.content'));
 			// console.log('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
