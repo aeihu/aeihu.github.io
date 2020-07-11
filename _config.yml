@@ -4,7 +4,6 @@ author: Agus Makmun
 github: https://github.com/agusmakmun
 about: I'm Programmer for Python & Django. I've made quite a few web apps, especially on Django.
 disqus_shortname: stackproblems
-google_analytics: UA-XXXXXXXX-Y
 
 enableTags: true
 tagarray: []
@@ -15,10 +14,10 @@ collections:
     permalink: /project/:path/
 
 social:
-    - icon: fa-facebook
-      link: "#"
-    - icon: fa-twitter
-      link: "#"
+    # - icon: fa-facebook
+    #   link: "#"
+    # - icon: fa-twitter
+    #   link: "#"
     - icon: fa-linkedin
       link: "#"
     - icon: fa-stack-exchange

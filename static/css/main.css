@@ -41,6 +41,7 @@ a:hover {
 /* Layout */
 .main-layout {
   background: #212121;
+  margin-top: 25px;
 }
 .sidebar-nav {
   margin: 0;
